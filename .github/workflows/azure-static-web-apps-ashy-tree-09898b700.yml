@@ -22,6 +22,7 @@ jobs:
         with:
           submodules: true
           lfs: false
+          fetch-depth: 0
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -50,6 +51,9 @@ jobs:
           app_build_command: "npm run docs:build"
           github_id_token: ${{ steps.idtoken.outputs.result }}
           ###### End of Repository/Build Configurations ######
+      - name: Ping IndexNow (Bing)
+        if: github.event_name == 'push'
+        run: node scripts/ping-indexnow.mjs
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'

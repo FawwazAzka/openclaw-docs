@@ -215,10 +215,25 @@ export default withMermaid(defineConfig({
   ignoreDeadLinks: true,
   sitemap: {
     hostname: SITE_URL,
+    transformItems(items) {
+      return items.map((item) => {
+        // 首页最高权重，每日更新
+        if (item.url === '') {
+          return { ...item, changefreq: 'daily', priority: 1.0 }
+        }
+        // 教程目录页
+        if (item.url.endsWith('/') && item.url !== '') {
+          return { ...item, changefreq: 'weekly', priority: 0.8 }
+        }
+        // 普通文档页
+        return { ...item, changefreq: 'weekly', priority: 0.7 }
+      })
+    },
   },
   head: [
     ['meta', { name: 'google-site-verification', content: '7B8csMYFOdvV0gzceMtR7a35llw1xqWXLeFp3AY4joo' }],
     ['meta', { name: 'msvalidate.01', content: 'FDCCD88DCD82F43265BDB13F25164705' }],
+    ['meta', { name: 'indexnow-key', content: 'b5c07ad1556cbf950d03b26f7e17f4e8' }],
     ['meta', { name: 'google-adsense-account', content: 'ca-pub-8945138028622018' }],
     ['script', { async: 'true', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8945138028622018', crossorigin: 'anonymous' }],
     ['meta', { name: 'author', content: 'OpenClaw' }],
